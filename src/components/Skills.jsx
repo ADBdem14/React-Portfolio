@@ -1,14 +1,14 @@
-export default function Skills() {
-        const skills = ["HTML", "CSS", "React"];
-    return(
-        <section>
-            <h2>My Skills</h2>
-            <ul>
-                {skills.map((skill, index) => (
-                <div key={index}>{skill}</div>
-             ))}
-            </ul>
-        </section>
-    );
-}
+import { portfolioData } from "../data/portfolioData";
 
+export default function Skills() {
+  return (
+    <section id="skills" className="section card">
+      <h2>Skills</h2>
+      <ul className="skills-grid">
+        {portfolioData.skills.map((skill) => (
+          <li key={skill}>{skill}</li>
+        ))}
+      </ul>
+    </section>
+  );
+}

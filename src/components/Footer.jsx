@@ -1,10 +1,8 @@
 export default function Footer() {
-    return(
-        <section id = "footer">
-            <h3>THE HEADLINE</h3>
-            <p>
-                Created by Aaron and work been done in Visual Studio Code
-            </p>
-        </section>
-    );
+  return (
+    <footer className="footer">
+      <p>Built by Aaron Davila with React + Vite.</p>
+      <p>© {new Date().getFullYear()} All rights reserved.</p>
+    </footer>
+  );
 }
