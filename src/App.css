@@ -1,0 +1,17 @@
+body {
+  font-family: Arial;
+  background: linear-gradient(to right, purple, orange);
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #444;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 8px;
+}
