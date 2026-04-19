@@ -1,12 +1,12 @@
+import { portfolioData } from "../data/portfolioData";
+
 export default function About() {
-    return (
-        <section id = "about">
-           <h2>About Me</h2>
-             <p>     
-                I am a junior in Kean Univesity. 
-                Major is Computer Science and learning codes is what I am practicing to achieve.
-                Maybe I can support and create some mini projects for ganes or to assist in the real world. 
-            </p>
-        </section>
-    );
+  return (
+    <section id="about" className="section card">
+      <h2>About Me</h2>
+      <p>{portfolioData.about}</p>
+      <p className="meta-line">{portfolioData.education}</p>
+      <p className="meta-line">{portfolioData.location}</p>
+    </section>
+  );
 }
