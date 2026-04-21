@@ -46,8 +46,8 @@ a {
 }
 
 .section {
-  padding: 1.3rem;
-  margin: 1rem 0;
+  padding: 1.5rem;
+  margin: 1.2rem 0;
 }
 
 .card {
@@ -60,6 +60,10 @@ a {
 .intro {
   text-align: left;
   padding-inline: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 290px);
+  align-items: center;
+  gap: clamp(1.2rem, 4vw, 2.8rem);
 }
 
 .intro h1 {
@@ -81,6 +85,21 @@ a {
 
 .intro-headline {
   max-width: 700px;
+  margin-top: 0.8rem;
+  line-height: 1.7;
+}
+
+.intro-photo-wrap {
+  justify-self: end;
+}
+
+.intro-photo {
+  width: clamp(180px, 30vw, 280px);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
 }
 
 .button-row {
@@ -245,6 +264,14 @@ a {
     flex-wrap: wrap;
     gap: 0.7rem;
   }
+  
+  .intro {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-photo-wrap {
+    justify-self: start;
+  }
 }
 
 
@@ -288,4 +315,38 @@ a {
 .mode-pill.offline {
   background: rgba(255, 193, 7, 0.2);
   color: #ffe6a3;
+}
+
+
+.reveal {
+  opacity: 0;
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-up {
+  transform: translateY(20px);
+}
+
+.reveal-left {
+  transform: translateX(-24px);
+}
+
+.reveal-right {
+  transform: translateX(24px);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-up,
+  .reveal-left,
+  .reveal-right {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }

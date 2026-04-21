@@ -2,7 +2,7 @@ import { portfolioData } from "../data/portfolioData";
 
 export default function Skills() {
   return (
-    <section id="skills" className="section card">
+    <section id="skills" className="section card reveal reveal-up">
       <h2>Skills</h2>
       <ul className="skills-grid">
         {portfolioData.skills.map((skill) => (

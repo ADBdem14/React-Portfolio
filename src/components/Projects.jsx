@@ -2,11 +2,11 @@ import { portfolioData } from "../data/portfolioData";
 
 export default function Projects() {
   return (
-    <section id="projects" className="section card">
+    <section id="projects" className="section card reveal reveal-up">
       <h2>Projects</h2>
       <div className="project-grid">
         {portfolioData.projects.map((project) => (
-          <article key={project.name} className="project-card">
+          <article key={project.name} className="project-card reveal reveal-up">
             <div className="project-header">
               <h3>{project.name}</h3>
               <span className="project-status">{project.status}</span>

@@ -2,7 +2,7 @@ import { portfolioData } from "../data/portfolioData";
 
 export default function Contact() {
   return (
-    <section id="contact" className="section card">
+    <section id="contact" className="section card reveal reveal-up">
       <h2>Contact</h2>
       <p>
         Email: <a href={`mailto:${portfolioData.email}`}>{portfolioData.email}</a>

@@ -2,7 +2,7 @@ import { portfolioData } from "../data/portfolioData";
 
 export default function About() {
   return (
-    <section id="about" className="section card">
+    <section id="about" className="section card reveal reveal-up">
       <h2>About Me</h2>
       <p>{portfolioData.about}</p>
       <p className="meta-line">{portfolioData.education}</p>
