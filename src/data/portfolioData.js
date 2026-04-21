@@ -4,7 +4,7 @@ export const portfolioData = {
   headline:
     "I build clean, user-friendly web experiences and enjoy turning ideas into practical projects.",
   about:
-    "I am a junior at Kean University majoring in Computer Science. I am focused on learning modern web development, building meaningful projects, and growing into a software engineer who can solve real-world problems.",
+    "I am a junior at Kean University majoring in Computer Science. I am focused on learning modern web development, building meaningful projects, and growing into a software engineer who can solve real-world problems. Anything beside coding and projects handling, I do enjoy the time of outside and providing time with my relatives. Time is what I worry in a decent matter.",
   education: "Kean University — B.S. Computer Science (In Progress)",
   email: "davilaaaron94@gmail.com",
   phone: "(848) 250-0598",
@@ -47,8 +47,8 @@ export const portfolioData = {
     }
   ],
   social: [
-    { label: "GitHub", href: "https://github.com/" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/" }
+    { label: "GitHub", href: "https://github.com/ADBdem14" },
+    { label: "LinkedIn", href: "https://www.linkedin.com//in/aaron-davila-bernal-951a52371/" }
   ],
   assistant: {
     intro: "Hi! I can answer questions about Aaron's portfolio and contact information.",
