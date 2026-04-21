@@ -1,5 +1,5 @@
 import { portfolioData } from "../data/portfolioData";
-import profilePhoto from "../assests/profile-photo.png";
+import profilePhoto from "../assets/profile-photo.png";
 
 export default function Intro() {
   return (
